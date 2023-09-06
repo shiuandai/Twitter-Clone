@@ -38,26 +38,29 @@ Designing a twitter clone social media website requires following some rules and
 
 ### 1.1 - Add the textarea
 
-* [ ] **HTML** is "HyperText Markup Language" It defines the meaning and structure of web content. The Web Designer should keep the structure simple and the similar content should be grouped together to make sure it can be read clearly.
-	> ℹ️ [HTML] GET to know more about the definition. → [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [ ] Take control of the data from **Textarea** when clicking button, then make sure the size of textarea fixed.
+	> ℹ️ [TEXTAREA] GET to know more about the element. → [W3School](https://www.w3schools.com/tags/tag_textarea.asp)
 
-* [ ] **Be familiar with the HTML Tag**. 
-* [ ] Before working on each website project, I can **build every template** with my own structure concept. Building the structure before everything else will facilitate my work afterward.
+* [ ] **resize for textarea element**. 
 
-```html
-<div class="container">
-  <div class="row">
-    <div class="col-sm">
-    </div>
-  </div>
-</div>
+```css
+textarea{
+    border: none;
+    padding: 10px;
+    margin: 0 0 20px 0;
+    height: 60px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    resize: none;   //keeps textarea the same size
+}
 ```
 
 ⚠️ *Use the "container" to define which tags should be contained inside, they perform "active" when using the **flex-box**, it is a crucial method to foster the web structure building.* 
 
 **[⬆ back to top](#table-of-contents)**
 
-### 1.2 - Colors
+### 1.2 - Loop through the data using "For each" and render the data
 
 You can "SAVE" your color preference in your account. → [Color Palette](https://scrimba.com/links/hometown-palette)
 
