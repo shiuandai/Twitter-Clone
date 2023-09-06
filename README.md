@@ -34,7 +34,7 @@ I start the Scrimba Module 5 course- Essential JavaScript Concepts and learn how
 
 ## 1. - Design requirements
 
-Designing a twitter clone social media website requires following some rules and taking into consideration.
+Designing a twitter clone social media website requires following some rules and taking into consideration about each scrum tutorial. This project can be split into several small parts.
 
 ### 1.1 - Structure design
 
