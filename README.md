@@ -32,11 +32,11 @@ I start the Scrimba Module 5 course- Essential JavaScript Concepts and learn how
 
 ---
 
-## 1. - Design requirements
+## 1. - Create a new tweet
 
 Designing a twitter clone social media website requires following some rules and taking into consideration about each scrum tutorial. This project can be split into several small parts.
 
-### 1.1 - Structure design
+### 1.1 - Add the textarea
 
 * [ ] **HTML** is "HyperText Markup Language" It defines the meaning and structure of web content. The Web Designer should keep the structure simple and the similar content should be grouped together to make sure it can be read clearly.
 	> ℹ️ [HTML] GET to know more about the definition. → [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML)
