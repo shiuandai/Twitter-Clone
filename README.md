@@ -18,7 +18,7 @@
 
 ---
 
-> The **Hometown Homepage** is my first static website in which I introduce my hometown spots and brief information to visitors who can review and knowing more about Taiwanese culture. Welcome to contact me if you need a local tour guide.
+> The **Twitter Clone** is my ninth static website, building the small features step by step and make sure the code is easily to read.
 
 I start the Scrimba Module 2 course- Web dev basics and learn how to use basic HTML & CSS knowledge. At the end of the course, I follow the Figma template to finish my hometown page where you can know more about me, take a look at the → [My Hometown Homepage](https://shiuandai.github.io/Hometown-Homepage/).
 
