@@ -25,10 +25,10 @@ I start the Scrimba Module 5 course- Essential JavaScript Concepts and learn how
 ## How I start the project?
 
 * Learn how to set the textarea for user to input their replies, and render the replies. 
-* Having a materials preparation document where I collect pictures/text information/text font/color to match a better visual communication and coherence in one page.
-* It's important to brainstorm the HTML structure before starting coding, this step helps me save time.
-* Use the "DRY" concept (Don't Repeat Yourself), so that I learn from tailoring the developer's code and learn from it and Scrimba course.
-* To show the completed work between a Web and a template, I prefer refining the CSS code to make sure the project can align the design.
+* Insert the icons from the "Font Awesome CDN" website.
+* Increase & Decrease the number of the "likes" and "tweets" icons.
+* Change the color of icons when clicking.
+* Render the replies by getting their UUID, and improving the UX.
 
 ---
 
