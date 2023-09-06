@@ -34,7 +34,7 @@ I start the Scrimba Module 5 course- Essential JavaScript Concepts and learn how
 
 ## 1. - Design requirements
 
-Designing a hometown homepage website requires following some rules and taking into consideration that the project is not only a graphic project but a web project too. The next sections are crucial for any web project.
+Designing a twitter clone social media website requires following some rules and taking into consideration.
 
 ### 1.1 - Structure design
 
