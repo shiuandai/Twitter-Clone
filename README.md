@@ -56,17 +56,44 @@ textarea{
 }
 ```
 
-⚠️ *Use the "container" to define which tags should be contained inside, they perform "active" when using the **flex-box**, it is a crucial method to foster the web structure building.* 
-
 **[⬆ back to top](#table-of-contents)**
 
-### 1.2 - Loop through the data using "For each" and render the data
+### 1.2 - “For each” method to iterate the array
 
-You can "SAVE" your color preference in your account. → [Color Palette](https://scrimba.com/links/hometown-palette)
+Look through how to use .forEach() → [.forEach()](https://www.w3schools.com/jsref/jsref_foreach.asp)
 
-* [ ] **All colors used in the creatives are named** (RED: #E63946, LIGHT: #F1FAEE, AQUA: #A8DADC, LIGHT BLUE: #457B9D, DARK BLUE: #1D3557) which are provided by Scrimba course so that they become the basic color guideline to use in my project.
+```js example
+const characters = [
+    {
+        title: 'Ninja',
+        emoji: '🥷',
+        powers: ['agility', 'jsstealth', 'aggression'],
+    },
+    {
+        title: 'Sorcerer',
+        emoji: '🧙',
+        powers: ['magic', 'invisibility', 'necromancy'],
+    },
+    { 
+        title: 'Ogre',
+        emoji: '👹',
+        powers: ['power', 'stamina', 'shapeshifting'],
+    },  
+    { 
+        title: 'Unicorn',
+        emoji: '🦄',
+        powers: [ 'flight', 'power', 'purity'],
+    }
+]
 
-* [ ] All of the most important/used **colors contrast** in the design to allow text with the background can be easily read.
+characters.forEach(function(character){   //The purpose of using forEach is to make the code easy to read and simple.
+    console.log(character)
+//The result shows below.
+//{title: "Ninja", emoji: "🥷", powers: ["agility", "stealth", "aggression"]}
+//{title: "Sorcerer", emoji: "🧙", powers: ["magic", "invisibility", "necromancy"]}
+//{title: "Ogre", emoji: "👹", powers: ["power", "stamina", "shapeshifting"]}
+//{title: "Unicorn", emoji: "🦄", powers: ["flight", "power", "purity"]}
+```
 
 **[⬆ back to top](#table-of-contents)**
 
