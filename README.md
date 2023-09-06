@@ -97,35 +97,27 @@ characters.forEach(function(character){   //The purpose of using forEach is to m
 
 **[⬆ back to top](#table-of-contents)**
 
-### 1.3 - Fonts and texts
 
-Fonts are an essential part of every design.
+## 2. - Control the icons
 
-It is recommended to organize the font size and style in the design process. There are several websites where the designer can download the font. ([Google font](https://fonts.google.com/)).
+### 2.1 - CDN
 
-* [ ] Using the technique **@font-face** in CSS, the link is embedded in the CSS. 
+Explaination why should we use CDN. → [AWS](https://aws.amazon.com/tw/what-is/cdn/)
+The icon examples which we can get from here. → [FONT-AWESOME-CDN](https://cdnjs.com/libraries/font-awesome)
 
-  __Resources:__
-	* 📖 [Using @font-face | CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face/)
+⚠️ *The first step to use the CDN, copy code and paste the link into <link> then paste “class” details into the section*
 
-* [ ] The **Web Safe Fonts** is an important concept. Web-safe fonts are fonts that are pre-installed by many operating systems. While not all systems have the same fonts installed, you can use a web-safe font stack to choose several fonts that look similar and are installed on the various systems that you want to support.
+```js
+<section class="icons-bar">
+     <i class="fa-solid fa-house"></i>
+     <i class="fa-solid fa-location-dot"></i>  //Get icon resource class name //Have to understand the concept of the data attribute
+     <i class="fa-regular fa-envelope"></i>
+     <i class="fa-regular fa-calendar-days"></i>
+</section>
+```
 
-**[⬆ back to top](#table-of-contents)**
+⚠️ *The defination of the **Data Attribute**: deta-unique-name="your data"*
 
-
-### 1.4 - Publish files
-
-* [ ] How to host your website, there are several ways. 1. **Netlify** provides next-generation web hosting and automation that's very affordable. Is can be integrated with Github for publishing the web easily. The alternative is using Github Page, my way is to use Github Page. → [Comparison of Github Page and Netlify](https://www.freecodecamp.org/news/publish-your-website-netlify-github/) 
-
-## 2. - Pre-work phases
-
-### 2.1 - Refine the project using CSS
-
-It is recommended to master the **flex-box** concept, it usually combines with different **Property** like **flex-direction: column; align-items: center;** .
-
-Define what condition to use the flex-box, it influences how the content displayed.
-
-⚠️ *When using the flex-box, it is good to use the property of "gap" rather than "margin" to generate the gap.*
 
 ## 3. - Before production
 
