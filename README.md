@@ -13,8 +13,8 @@
 * **[2. Control the icons](#2---Control-the-icons)**
 	* [2.1 CDN](#21---CDN)
  	* [2.2 Get value of data-attribute ](#22---Get-value-of-data-attribute )
-	* [2.3 Find the tweet obj & increase the like number ](#23---Find-the-tweet-obj-&-increase-the-like-number )
-	* [2.4 Flip the boolean to control the like & dislike](#24---Flip-the-boolean-to-control-the-like-&-dislike)
+	* [2.3 Find the tweet obj and increase the like number ](#23---Find-the-tweet-obj-and-increase-the-like-number )
+	* [2.4 Flip the boolean to control the like and dislike](#24---Flip-the-boolean-to-control-the-like-and-dislike)
 	* [2.5 Conditionally Render CSS ](#25---Conditionally-Render-CSS )
 * **[3. Replies setup](#3---Replies-setup)**
   	* [3.1 Get the UUID of replies](#31---Get-the-UUID-of-replies)
@@ -135,7 +135,7 @@ document.addEventListener('click', function(e) {
 })
 ```
 **[⬆ back to top](#table-of-contents)**
-### 2.3 - Find the tweet obj & increase the like number 
+### 2.3 - Find the tweet obj and increase the like number 
 
 ```js
 import { tweetsData } from './data.js'
@@ -161,7 +161,7 @@ function handleLikeClick(tweetId){
 }
 ```
 **[⬆ back to top](#table-of-contents)**
-### 2.4 - Flip the boolean to control the like & dislike
+### 2.4 - Flip the boolean to control the like and dislike
 
 ```js
 //Make sure to listen to the button
