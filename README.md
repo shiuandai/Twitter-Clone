@@ -123,9 +123,35 @@ The icon examples which we can get from here. → [FONT-AWESOME-CDN](https://cdn
 ```js
 document.addEventListener('click', function(e) {
 		if (e.target.dataset.share){
-    			console.log(e.target.dataset.share)   //output 為image-1  review the code above，當click後 會output image
-		}     //if return T then the data-share inside data element   //輸出為 DOMStringMap {share: "image-1"}
+    			console.log(e.target.dataset.share)   //output is image-1, review the code above，after clicking: output shows "image"
+		}     //if return T then the data-share inside data element   //The output is DOMStringMap {share: "image-1"}
 })
+```
+
+### 2.3 - Find the tweet obj & increase the "like" number 
+
+```js
+import { tweetsData } from './data.js'
+const tweetInput = document.getElementById('tweet-input')
+const tweetBtn = document.getElementById('tweet-btn')
+
+tweetBtn.addEventListener('click', function(){
+    console.log(tweetInput.value)
+})
+
+document.addEventListener('click', function(e){
+    if(e.target.dataset.like){
+       handleLikeClick(e.target.dataset.like) 
+    }
+})
+
+function handleLikeClick(tweetId){
+    const targetTweetObj = tweetsData.filter(function(tweet){
+        return tweet.uuid === tweetId  //if the tweet id is the same of the loop id，then return true
+    })[0]  //輸出object而不是array
+    targetTweetObj.likes++  //increase the like number when click
+    console.log(tweetsData)
+}
 ```
 
 ## 3. - Before production
