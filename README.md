@@ -156,11 +156,12 @@ function handleLikeClick(tweetId){
     const targetTweetObj = tweetsData.filter(function(tweet){
         return tweet.uuid === tweetId  //if the tweet id is the same of the loop id，then return true
     })[0]  //The output is object, not array
-    targetTweetObj.likes++  //increase the like number when click
+    targetTweetObj.likes++  //increase the like number when clicking
     console.log(tweetsData)
 }
 ```
 **[⬆ back to top](#table-of-contents)**
+
 ### 2.4 - Flip the boolean to control the like and dislike
 
 ```js
@@ -186,6 +187,7 @@ function handleLikeClick(tweetId){
 }
 ```
 **[⬆ back to top](#table-of-contents)**
+
 ### 2.5 - Conditionally Render CSS 
 
 ```js/ Make heart icon turns to red
@@ -193,7 +195,6 @@ const galleryContainer = document.getElementById('gallery-container')
 
 let isLiked = false
 let isShared = false
-
 
 document.addEventListener('click', function(e){
     if(e.target.dataset.heart){
@@ -208,7 +209,7 @@ document.addEventListener('click', function(e){
 
 function render(){ 
     
-    let heartClass = ''  //剛開始是empty class所以沒有class在裡面
+    let heartClass = ''  //initialize the variable
     let shareClass = ''
     
     if(isLiked){
@@ -248,6 +249,7 @@ render()
 }
 ```
 **[⬆ back to top](#table-of-contents)**
+
 ## 3. - Replies setup
 
 ### 3.1 - Get the UUID of replies
@@ -276,6 +278,7 @@ function getFeedHtml(){
 }
 ```
 **[⬆ back to top](#table-of-contents)**
+
 ### 3.2 - Provide each reply unique UUID
 
 ```js
@@ -317,6 +320,7 @@ console.log(cars)
 </html>
 ```
 **[⬆ back to top](#table-of-contents)**
+
 ### 3.3 - Push the new tweet to the dataset
 
 ```js
