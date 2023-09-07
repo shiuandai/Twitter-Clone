@@ -148,7 +148,7 @@ document.addEventListener('click', function(e){
 function handleLikeClick(tweetId){
     const targetTweetObj = tweetsData.filter(function(tweet){
         return tweet.uuid === tweetId  //if the tweet id is the same of the loop id，then return true
-    })[0]  //輸出object而不是array
+    })[0]  //The output is object, not array
     targetTweetObj.likes++  //increase the like number when click
     console.log(tweetsData)
 }
