@@ -9,7 +9,7 @@
 ## Table of Contents
 * **[1. Create a new tweet](#1---Create-a-new-tweet)**
 	* [1.1 Add the textarea](#11---Add-the-textarea)
-	* [1.2 “For each” method to iterate the array](#12---“For-each”-method-to-iterate-the-array)
+	* [1.2 For each method to iterate the array](#12---For-each-method-to-iterate-the-array)
 	* [1.3 Fonts and texts](#13---fonts-and-texts)
 	* [1.4 Publish files](#14---publish-files)
 * **[2. Pre-work phases](#2---pre-work-phases)**
@@ -58,7 +58,7 @@ textarea{
 
 **[⬆ back to top](#table-of-contents)**
 
-### 1.2 - “For each” method to iterate the array
+### 1.2 - For each method to iterate the array
 
 Look through how to use .forEach() → [.forEach()](https://www.w3schools.com/jsref/jsref_foreach.asp)
 
