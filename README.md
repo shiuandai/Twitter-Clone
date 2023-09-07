@@ -10,8 +10,12 @@
 * **[1. Create a new tweet](#1---Create-a-new-tweet)**
 	* [1.1 Add the textarea](#11---Add-the-textarea)
 	* [1.2 For each method to iterate the array](#12---For-each-method-to-iterate-the-array)
-* **[2. Pre-work phases](#2---pre-work-phases)**
-	* [2.1 Refine the project using CSS](#21---refine-the-project-using-CSS)
+* **[2. Control the icons](#2---Control-the-icons)**
+	* [2.1 CDN](#21---CDN)
+ 	* [2.2 Get value of data-attribute ](#22---Get-value-of-data-attribute )
+     	* [2.3 Find the tweet obj & increase the like number ](#23---Find-the-tweet-obj-&-increase-the-like-number )
+ 	* [2.4 Flip the boolean to control the like & dislike](#24---Flip-the-boolean-to-control-the-like-&-dislike)
+        * [2.5 Conditionally Render CSS ](#25---Conditionally-Render-CSS )
 * **[3. Before production](#3---before-production)**
 
 ---
@@ -116,6 +120,7 @@ The icon examples which we can get from here. → [FONT-AWESOME-CDN](https://cdn
 
 ⚠️ *The defination of the **Data Attribute**: deta-unique-name="your data"*
 
+**[⬆ back to top](#table-of-contents)**
 ### 2.2 - Get value of data-attribute 
 
 ```js
@@ -125,8 +130,8 @@ document.addEventListener('click', function(e) {
 		}     //if return T then the data-share inside data element   //The output is DOMStringMap {share: "image-1"}
 })
 ```
-
-### 2.3 - Find the tweet obj & increase the "like" number 
+**[⬆ back to top](#table-of-contents)**
+### 2.3 - Find the tweet obj & increase the like number 
 
 ```js
 import { tweetsData } from './data.js'
@@ -151,7 +156,7 @@ function handleLikeClick(tweetId){
     console.log(tweetsData)
 }
 ```
-
+**[⬆ back to top](#table-of-contents)**
 ### 2.4 - Flip the boolean to control the like & dislike
 
 ```js
@@ -176,7 +181,7 @@ function handleLikeClick(tweetId){
     render()
 }
 ```
-
+**[⬆ back to top](#table-of-contents)**
 ### 2.5 - Conditionally Render CSS 
 
 ```js/ Make heart icon turns to red
@@ -238,7 +243,7 @@ render()
     color: limegreen; 
 }
 ```
-
+**[⬆ back to top](#table-of-contents)**
 ## 3. - Replies setup
 
 ### 3.1 - Get the UUID of replies
