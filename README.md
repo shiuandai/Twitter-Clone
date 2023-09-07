@@ -13,8 +13,8 @@
 * **[2. Control the icons](#2---Control-the-icons)**
 	* [2.1 CDN](#21---CDN)
  	* [2.2 Get value of data-attribute ](#22---Get-value-of-data-attribute )
-     	* [2.3 Find the tweet obj & increase the like number ](#23---Find-the-tweet-obj-&-increase-the-like-number )
- 	* [2.4 Flip the boolean to control the like & dislike](#24---Flip-the-boolean-to-control-the-like-&-dislike)
+	* [2.3 Find the tweet obj & increase the like number ](#23---Find-the-tweet-obj-&-increase-the-like-number )
+	* [2.4 Flip the boolean to control the like & dislike](#24---Flip-the-boolean-to-control-the-like-&-dislike)
         * [2.5 Conditionally Render CSS ](#25---Conditionally-Render-CSS )
 * **[3. Replies setup](#3---Replies-setup)**
   	* [3.1 Get the UUID of replies](#31---Get-the-UUID-of-replies)
@@ -336,9 +336,10 @@ function handleTweetBtnClick(){
 }
 ```
 **[⬆ back to top](#table-of-contents)**
+
 ### 3.4 - Improve the UX
 
-```
+```js
 function handleTweetBtnClick(){
     const tweetInput = document.getElementById('tweet-input')
     if(tweetInput.value){       //If the value in the textarea exists then push the data into the array.
