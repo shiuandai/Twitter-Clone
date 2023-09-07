@@ -118,6 +118,15 @@ The icon examples which we can get from here. → [FONT-AWESOME-CDN](https://cdn
 
 ⚠️ *The defination of the **Data Attribute**: deta-unique-name="your data"*
 
+### 2.2 - Get value of data-attribute 
+
+```js
+document.addEventListener('click', function(e) {
+		if (e.target.dataset.share){
+    			console.log(e.target.dataset.share)   //output 為image-1  review the code above，當click後 會output image
+		}     //if return T then the data-share inside data element   //輸出為 DOMStringMap {share: "image-1"}
+})
+```
 
 ## 3. - Before production
 
