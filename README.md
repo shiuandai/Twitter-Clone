@@ -7,9 +7,9 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com) [![Join the chat at https://gitter.im/Front-End-Checklist/Front-End-Design-Checklist](https://badges.gitter.im/Front-End-Checklist/Front-End-Design-Checklist.svg)](https://gitter.im/Front-End-Checklist/Front-End-Design-Checklist) [![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 ## Table of Contents
-* **[1. Design requirements](#1---design-requirements)**
-	* [1.1 Structure Design](#11---grid-system)
-	* [1.2 Colors](#12---colors)
+* **[1. Create a new tweet](#1---Create-a-new-tweet)**
+	* [1.1 Add the textarea](#11---Add-the-textarea)
+	* [1.2 “For each” method to iterate the array](#12---“For-each”-method-to-iterate-the-array)
 	* [1.3 Fonts and texts](#13---fonts-and-texts)
 	* [1.4 Publish files](#14---publish-files)
 * **[2. Pre-work phases](#2---pre-work-phases)**
@@ -241,9 +241,115 @@ render()
 }
 ```
 
-## 3. - Before production
+## 3. - Replies setup
 
-Before launching your website, be sure to review all your code and make sure the text layout and comment it's easy to read for another programmer.
+### 3.1 - Get the UUID of replies
+
+```js
+function getFeedHtml(){
+    let feedHtml = ``
+    
+    tweetsData.forEach(function(tweet){  //loop through the object
+        
+        let likeIconClass = ''
+        
+        if (tweet.isLiked){
+            likeIconClass = 'liked'
+        }
+        
+        let retweetIconClass = ''
+        
+        if (tweet.isRetweeted){
+            retweetIconClass = 'retweeted'
+        }
+        
+        if(tweet.replies.length > 0){
+            console.log(tweet.uuid)   //check the length of the tweet if there is any replies then output its UUID
+        }
+}
+```
+
+### 3.2 - Provide each reply unique UUID
+
+```js
+import { v4 as uuidv4 } from 'https://jspm.dev/uuid'; //import the UUID JS 
+  
+const cars = [
+    {
+    brand: 'Nissan',
+    model: 'Leaf',
+    price: 3000,
+    uuid: '4fb2b6b7-c7ee-4c80-8de1-390e89f43d7f'
+    }, 
+    {
+    brand: 'Toyota',
+    model: 'Prius',
+    price: 6000,
+    uuid: '82a13f62-d239-46a2-a94f-020189338e1a'
+    }, 
+] 
+
+cars.push({
+    brand: 'Tesla',
+    model: 'Model S',
+    price: '🤦‍♂️',
+    uuid: uuidv4()  //Input function
+})
+
+console.log(cars)
+```
+
+```html
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <script src="index.js" type="module"></script>  //setting to module
+    </body>
+</html>
+```
+
+### 3.3 - Push the new tweet to the dataset
+
+```js
+function handleTweetBtnClick(){
+    tweetsData.unshift({   //tweet the post in the beginning of the object
+        handle: `@Scrimba`,
+        profilePic: `images/scrimbalogo.png`,
+        likes: 0,
+        retweets: 0,
+        tweetText: tweetInput.value,
+        replies: [],
+        isLiked: false,
+        isRetweeted: false,
+        uuid: uuidv4()
+    })
+    render()    
+}
+```
+### 3.4 - Improve the UX
+
+```
+function handleTweetBtnClick(){
+    const tweetInput = document.getElementById('tweet-input')
+    if(tweetInput.value){       //If the value in the textarea exists then push the data into the array.
+        tweetsData.unshift({
+            handle: `@Scrimba`,
+            profilePic: `images/scrimbalogo.png`,
+            likes: 0,
+            retweets: 0,
+            tweetText: tweetInput.value,
+            replies: [],
+            isLiked: false,
+            isRetweeted: false,
+            uuid: uuidv4()
+        })
+    render()
+    tweetInput.value = ''
+    }
+}
+```
 
 **[⬆ back to top](#table-of-contents)**
 
