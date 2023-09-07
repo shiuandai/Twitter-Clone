@@ -86,7 +86,7 @@ const characters = [
     }
 ]
 
-characters.forEach(function(character){   //The purpose of using forEach is to make the code easy to read and simple.
+characters.forEach(function(character){   //The purpose of using forEach is to make the code easy to read.
     console.log(character)
 //The result shows below.
 //{title: "Ninja", emoji: "🥷", powers: ["agility", "stealth", "aggression"]}
