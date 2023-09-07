@@ -16,7 +16,10 @@
      	* [2.3 Find the tweet obj & increase the like number ](#23---Find-the-tweet-obj-&-increase-the-like-number )
  	* [2.4 Flip the boolean to control the like & dislike](#24---Flip-the-boolean-to-control-the-like-&-dislike)
         * [2.5 Conditionally Render CSS ](#25---Conditionally-Render-CSS )
-* **[3. Before production](#3---before-production)**
+* **[3. Replies setup](#3---Replies-setup)**
+  	* [3.1 CDN](#31---CDN)
+ 	* [3.2 Get value of data-attribute ](#32---Get-value-of-data-attribute )
+     	* [3.3 Find the tweet obj & increase the like number ](#33---Find-the-tweet-obj-&-increase-the-like-number )
 
 ---
 
