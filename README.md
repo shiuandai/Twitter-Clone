@@ -154,6 +154,93 @@ function handleLikeClick(tweetId){
 }
 ```
 
+### 2.4 - Flip the boolean to control the like & dislike
+
+```js
+//Make sure to listen to the button
+document.addEventListener('click', function(e){
+    if(e.target.dataset.like){
+       handleLikeClick(e.target.dataset.like) 
+    }
+
+function handleLikeClick(tweetId){ 
+    const targetTweetObj = tweetsData.filter(function(tweet){
+        return tweet.uuid === tweetId
+    })[0]
+
+    if (targetTweetObj.isLiked){
+        targetTweetObj.likes--
+    }
+    else{
+        targetTweetObj.likes++ 
+    }
+    targetTweetObj.isLiked = !targetTweetObj.isLiked   //The goal is to flip the boolean.
+    render()
+}
+```
+
+### 2.5 - Conditionally Render CSS 
+
+```js/ Make heart icon turns to red
+const galleryContainer = document.getElementById('gallery-container')
+
+let isLiked = false
+let isShared = false
+
+
+document.addEventListener('click', function(e){
+    if(e.target.dataset.heart){
+        isLiked = !isLiked  //flip the boolean short-hand
+        render()
+    }
+    else if(e.target.dataset.share){
+        isShared = !isShared  //flip the boolean short-hand
+        render()
+    }
+})
+
+function render(){ 
+    
+    let heartClass = ''  //剛開始是empty class所以沒有class在裡面
+    let shareClass = ''
+    
+    if(isLiked){
+        heartClass = 'liked'  //if "isLiked" is true then set up the Class to "liked"
+    }
+    
+    if(isShared){
+        shareClass = 'shared'   
+    }
+       
+    let imageHtml = `
+    		<div id="image-1" class="img-container">
+			<img src="dino2.jpeg" alt="Man in front of dinosaur">
+			<div class="social-icons-container">
+				<i class="fa-solid fa-heart ${heartClass}" data-heart="image-1"></i>
+				<i class="fa-solid fa-share ${shareClass}" data-share="image-1"></i>
+			</div>
+    `
+    galleryContainer.innerHTML = imageHtml
+}
+
+render()
+```
+
+``` html
+<section class="gallery-container" id="gallery-container">
+</section>
+```
+
+```css
+.liked{
+    color: #f80000; /* red */
+}
+
+.shared{
+    color: limegreen; 
+}
+```
+
 ## 3. - Before production
 
 Before launching your website, be sure to review all your code and make sure the text layout and comment it's easy to read for another programmer.
