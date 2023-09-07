@@ -10,8 +10,6 @@
 * **[1. Create a new tweet](#1---Create-a-new-tweet)**
 	* [1.1 Add the textarea](#11---Add-the-textarea)
 	* [1.2 For each method to iterate the array](#12---For-each-method-to-iterate-the-array)
-	* [1.3 Fonts and texts](#13---fonts-and-texts)
-	* [1.4 Publish files](#14---publish-files)
 * **[2. Pre-work phases](#2---pre-work-phases)**
 	* [2.1 Refine the project using CSS](#21---refine-the-project-using-CSS)
 * **[3. Before production](#3---before-production)**
