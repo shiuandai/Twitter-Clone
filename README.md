@@ -17,9 +17,10 @@
  	* [2.4 Flip the boolean to control the like & dislike](#24---Flip-the-boolean-to-control-the-like-&-dislike)
         * [2.5 Conditionally Render CSS ](#25---Conditionally-Render-CSS )
 * **[3. Replies setup](#3---Replies-setup)**
-  	* [3.1 CDN](#31---CDN)
- 	* [3.2 Get value of data-attribute ](#32---Get-value-of-data-attribute )
-     	* [3.3 Find the tweet obj & increase the like number ](#33---Find-the-tweet-obj-&-increase-the-like-number )
+  	* [3.1 Get the UUID of replies](#31---Get-the-UUID-of-replies)
+ 	* [3.2 Provide each reply unique UUID](#32---Provide-each-reply-unique-UUID)
+     	* [3.3 Push the new tweet to the dataset](#33---Push-the-new-tweet-to-the-dataset)
+	* [3.4 Improve the UX](#34---Improve-the-UX)
 
 ---
 
@@ -274,7 +275,7 @@ function getFeedHtml(){
         }
 }
 ```
-
+**[⬆ back to top](#table-of-contents)**
 ### 3.2 - Provide each reply unique UUID
 
 ```js
@@ -315,7 +316,7 @@ console.log(cars)
     </body>
 </html>
 ```
-
+**[⬆ back to top](#table-of-contents)**
 ### 3.3 - Push the new tweet to the dataset
 
 ```js
@@ -334,6 +335,7 @@ function handleTweetBtnClick(){
     render()    
 }
 ```
+**[⬆ back to top](#table-of-contents)**
 ### 3.4 - Improve the UX
 
 ```
