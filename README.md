@@ -110,9 +110,9 @@ The icon examples which we can get from here. → [FONT-AWESOME-CDN](https://cdn
 ```js
 <section class="icons-bar">
      <i class="fa-solid fa-house"></i>
-     <i class="fa-solid fa-location-dot"></i>  //Get icon resource class name //Have to understand the concept of the data attribute
+     <i class="fa-solid fa-location-dot"></i>  //Get icon resource class name //Have to understand the concept of the data attribute.
      <i class="fa-regular fa-envelope"></i>
-     <i class="fa-regular fa-calendar-days"></i>
+     <i class="fa-regular fa-calendar-days"></i>   //This is the example of how to use the data-attribute in the class.
 </section>
 ```
 
